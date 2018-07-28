@@ -1,6 +1,3 @@
-import six
-
-
 METRIC_PROFILE_NAMESPACE = 'functions_profile'
 
 METRIC_MODE_TIME = "time"
