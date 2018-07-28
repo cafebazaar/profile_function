@@ -44,7 +44,9 @@ def f(x,y):
 
 Use pip as below 
 
-```pip install profile_function```
+```bash
+pip install profile_function
+```
 
 If you are using statsd you need to install it. This project does not mentioned statsd as it own dependency.
 
