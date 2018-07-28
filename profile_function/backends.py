@@ -79,14 +79,3 @@ class LoggerBackend(CollectorBackend):
 
     def timer(self, name):
         return TimerContext(self.logger, name, self.log_level)
-
-
-class PrometheusBackend(CollectorBackend):
-    """
-    Backend to collect data to prometheus
-    """
-
-    name_separator = '_'
-
-    def timer(self, name):
-        raise NotImplemented("Not implemented yet!")
