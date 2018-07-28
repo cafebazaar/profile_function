@@ -79,3 +79,6 @@ class ProfileFunction(object):
             return wrapper
 
         return internal
+
+
+__all__ = (ProfileFunction.__name__,)

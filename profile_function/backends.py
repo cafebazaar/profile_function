@@ -1,5 +1,6 @@
 import timeit
 from abc import ABCMeta, abstractmethod
+import logging
 
 
 class CollectorBackend(object):
@@ -69,7 +70,7 @@ class LoggerBackend(CollectorBackend):
 
     name_separator = '.'
 
-    def __init__(self, logger, log_level='INFO'):
+    def __init__(self, logger, log_level=logging.INFO):
         """
         :param logger: logger object to collect logs in the desired namespace
         :param log_level: level of logging as python log levels
@@ -79,3 +80,6 @@ class LoggerBackend(CollectorBackend):
 
     def timer(self, name):
         return TimerContext(self.logger, name, self.log_level)
+
+
+__all__ = (CollectorBackend.__name__, LoggerBackend.__name__, StatsdBackend.__name__)
