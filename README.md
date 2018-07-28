@@ -2,8 +2,10 @@
 
 ```
 from profile_function import ProfileFunction, StatsdBackend
+import statsd
 
-pf = ProfileFunction(StatsBackend(statsd))
+statsd_client = statsd.StatsClient('localhost', 8125)
+pf = ProfileFunction(StatsBackend(statsd_client))
 
 @pf.profile_function(group="rpc")
 def f(x,y):
