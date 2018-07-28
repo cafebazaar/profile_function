@@ -48,7 +48,11 @@ Use pip as below
 pip install profile_function
 ```
 
-If you are using statsd you need to install it. This project does not mentioned statsd as it own dependency.
+If you are using statsd you need to install it. This project does not mentioned statsd as it own dependency. This command may be useful then:
+```bash
+pip install statsd
+```
+
 
 ## Developments:
 You can write your own collector if you need by implementing CollectorBackend.
