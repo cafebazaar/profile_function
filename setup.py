@@ -4,7 +4,7 @@ from distutils.core import setup
 
 
 setup(name='profile_function',
-      version='1.1',
+      version='0.1',
       description='Profiling tools for functions',
       author='Divar',
       author_email='dev@divar.ir',
