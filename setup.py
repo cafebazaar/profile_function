@@ -10,5 +10,5 @@ setup(name='profile_function',
       author_email='dev@divar.ir',
       url='https://github/divar',
       packages=['profile_function'],
-      install_requires=['six', 'statsd']
+      install_requires=[]
       )
