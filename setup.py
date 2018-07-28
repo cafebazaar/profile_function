@@ -8,7 +8,7 @@ setup(name='profile_function',
       description='Profiling tools for functions',
       author='Divar',
       author_email='dev@divar.ir',
-      url='https://github/divar',
+      url='https://github.com/cafebazaar/profile_function',
       packages=['profile_function'],
       install_requires=[]
       )
